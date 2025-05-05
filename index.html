@@ -1,0 +1,202 @@
+<!-- 
+    FEITO POR RONYEL BORGES 
+    DATA: 05/05/2025
+    TURMA: 3º ANO O
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Campeonato Escolar 2025</title>
+  </head>
+
+  <body class="bg-light">
+
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#inicio">
+            <i class="bi bi-building-fill me-2 text-navy"></i>
+            <span class="text-navy fw-bold">Fundação Ronyelson</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-navy" href="#inicio">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-navy" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-navy" href="#inscricao">Inscreva-se</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <section
+      id="inicio"
+      class="hero text-center text-white d-flex align-items-center"
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold">Campeonato Escolar 2025!</h1>
+        <p class="lead mb-4">
+          Inscreva-se nesse evento incrível e se envolva nessa grande competição!!
+        </p>
+        <a href="#inscricao" class="btn btn-navy btn-lg">Inscreva-se agora</a>
+      </div>
+    </section>
+    
+    <!-- CONTADOR -->
+    <div class="contagem">
+        <span id="days">00</span> Dias
+        <span id="hours">00</span> Horas
+        <span id="minutes">00</span> Minutos
+        <span id="seconds">00</span> Segundos
+    </div>
+    
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="info-block p-4 text-center">
+              <img
+                src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Participantes"
+                class="mb-3 img-fluid rounded"
+              />
+              <h5 class="text-navy">Quem pode participar?</h5>
+              <p>Alunos matriculados no 1º, 2º e 3º ano.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-block p-4 text-center">
+              <img
+                src="https://media.istockphoto.com/id/1755782878/pt/foto/portrait-of-a-sports-team-at-a-sports-court.webp?a=1&b=1&s=612x612&w=0&k=20&c=rkdDwwkegu_LkFFsfrftZF4UL8n1QcI9Xnk_AFe1SUc="
+                alt="Modalidades"
+                class="mb-3 img-fluid rounded"
+              />
+              <h5 class="text-navy">Modalidades</h5>
+              <p>Futsal, Basquete e Queimada.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-block p-4 text-center">
+              <img
+                src="https://images.unsplash.com/photo-1630884374457-1d83618bc1bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWx1bm9zJTIwZXNwb3J0ZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Data e Local"
+                class="mb-3 img-fluid rounded"
+              />
+              <h5 class="text-navy">Data e Local</h5>
+              <p>15 de Junho de 2025 no Ginásio Poliesportivo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section id="inscricao" class="py-5 bg-white">
+      <div class="container">
+        <form class="row g-3 needs-validation" id="formulario" novalidate>
+          <h2 class="text-center mb-4 text-navy">Formulário de Inscrição</h2>
+          <div id="liveAlertPlaceholder"></div>
+
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" id="nome" class="form-control" required />
+            <div class="invalid-feedback">Insira seu nome completo.</div>
+          </div>
+
+          <div class="col-md-2">
+            <label for="idade" class="form-label">Idade</label>
+            <input
+              type="number"
+              id="idade"
+              class="form-control"
+              min="12"
+              max="18"
+              required
+            />
+            <div class="invalid-feedback">Idade entre 12 e 18 anos.</div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="serie" class="form-label">Série</label>
+            <select id="serie" class="form-select" required>
+              <option value="">Escolha...</option>
+              <option>1º ano</option>
+              <option>2º ano</option>
+              <option>3º ano</option>
+            </select>
+            <div class="invalid-feedback">Selecione sua série.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="modalidade" class="form-label">Modalidade</label>
+            <select id="modalidade" class="form-select" required>
+              <option value="">Escolha...</option>
+              <option>Futsal</option>
+              <option>Basquete</option>
+              <option>Queimada</option>
+            </select>
+            <div class="invalid-feedback">Selecione uma modalidade.</div>
+          </div>
+
+          <div class="col-12 form-check">
+            <input
+              type="checkbox"
+              id="termos"
+              class="form-check-input"
+              required
+            />
+            <label for="termos" class="form-check-label"
+              >Aceito os termos</label
+            >
+            <div class="invalid-feedback">Você deve aceitar os termos.</div>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-navy btn-lg">
+              Enviar Inscrição
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

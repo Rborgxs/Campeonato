@@ -1,0 +1,56 @@
+:root {
+  --bs-navy: #0b1f3a;
+  --bs-navy-light: #123c63;
+  --bs-navy-lighter: #dbe9f5;
+}
+
+.text-navy {
+  color: var(--bs-navy) !important;
+}
+
+.btn-navy {
+  background-color: var(--bs-navy-light);
+  border-color: var(--bs-navy);
+  color: #fff;
+}
+
+.btn-navy:hover {
+  background-color: var(--bs-navy);
+}
+
+.hero {
+  background-color: var(--bs-navy);
+  padding: 30px;
+}
+
+.info-block {
+  background-color: #ffffff;
+  border: solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.contagem{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #6d8ba7;
+  color: white;
+}
+
+#inscricao {
+  background-color: #0d2d52;
+  padding: 4rem 2rem;
+}
+
+#inscricao form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: #092570;
+}
